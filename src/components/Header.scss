@@ -1,0 +1,46 @@
+@import "./func";
+.Header{
+  grid-area: Header;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+margin-bottom: 50px;
+  @include divsMid;
+  flex-direction: row;
+  .nameAndTitle{
+
+  }
+  .imageDiv{
+    img{
+width: 100px;
+      border-radius: 45%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 767px){
+
+  .Header{
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nameAndTitle{
+
+    }
+    .imageDiv{
+      img{
+        width: 100px;
+      }
+    }
+  }
+
+}

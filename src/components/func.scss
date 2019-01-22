@@ -1,0 +1,108 @@
+@mixin padding{
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+@mixin divsRight{
+  animation: divsRight 2s forwards;
+  animation-delay: 5s;
+  position: relative;
+  left: 500px;
+  visibility: hidden;
+  transition:1s;
+  background-color: rgba(255,255,255,0.3);
+  color: white;
+  opacity: 0.8;
+
+  @include padding;
+  &:hover{
+    color: white;
+    background-color: rgba(0,0,0,1);
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 5;
+  }
+}
+
+@mixin divsLeft{
+  animation: divsLeft 2s forwards;
+  animation-delay: 5s;
+  position: relative;
+  transition:1s;
+  @include padding;
+  color: white;
+  background-color: rgba(255,255,255,0.3);
+  left: -500px;
+  visibility: hidden;
+  opacity: 0.8;
+  &:hover{
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0,0,0,1);
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 5;
+  }
+}
+
+
+@mixin divsMid {
+  animation: divsMid 2s forwards;
+  animation-delay: 5s;
+  position: relative;
+  transition:1s;
+  visibility: hidden;
+  background-color: black;
+  color: white;
+
+  @include padding;
+  &:hover{
+    //font-size: 1.2em;
+
+    transform: scale(1.1);
+    z-index: 5;
+    background-color: rgba(0,0,0,1);
+    opacity: 1;
+    .imageDiv{
+      transition:1s;
+      img{
+        &:hover{
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+}
+
+
+@keyframes divsRight {
+ from{
+    left: 500px;
+  }
+  to{
+    left: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes divsMid {
+  from{
+    top : -2000px;
+  }
+  to{
+    top: 0;
+    visibility: visible;
+  }
+}
+@keyframes divsLeft {
+  from{
+    left: -500px;
+  }
+  to{
+    left: 0;
+    visibility: visible;
+  }
+}

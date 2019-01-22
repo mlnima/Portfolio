@@ -1,0 +1,40 @@
+@import "./func";
+
+.Education{
+grid-area: Education;
+
+  border-radius: 30px;
+  background-image: url("https://www.freeiconspng.com/uploads/education-png-6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  @include divsMid;
+  background-color: rgba(255,255,255,0.3);
+  color: white;
+  &:hover{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 767px){
+  .Education{
+
+  }
+
+
+}

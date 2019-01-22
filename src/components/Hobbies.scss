@@ -1,0 +1,11 @@
+@import "./func";
+.Hobbies{
+
+  grid-area: Hobbies;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 30px;
+  background-image: url("http://pngimg.com/uploads/joystick/joystick_PNG11256.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  @include divsRight;
+}

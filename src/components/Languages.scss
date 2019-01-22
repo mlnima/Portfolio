@@ -1,0 +1,11 @@
+@import "./func";
+.Languages{
+  grid-area: Languages;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 30px;
+  background-image: url("https://image.flaticon.com/icons/png/512/48/48632.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  @include divsRight;
+
+}

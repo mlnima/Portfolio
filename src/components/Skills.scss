@@ -1,0 +1,65 @@
+@import "./func";
+.Skills{
+  grid-area: Skills;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 30px;
+  transition:1s;
+  background-image: url("https://webiconspng.com/wp-content/uploads/2017/01/Programming-Coding-Icon-PNG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  @include divsLeft;
+  .skill{
+    display: flex;
+
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 15px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    p{
+      max-height: 11px;
+    }
+    progress{
+      padding-left:40px;
+      margin-top: 12px ;
+      max-width: 150px;
+      //background-color: black;
+      max-height: 12px;
+      border: none;
+    }
+    progress[value]{
+      //background-color: black;
+      border: none;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 767px){
+.Skills{
+  .skill{
+
+    min-width: 90%;
+
+    p{
+
+    }
+    progress{
+
+      max-width: 200px;
+
+
+    }
+
+  }
+}
+
+
+
+}

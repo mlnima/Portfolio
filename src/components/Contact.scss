@@ -1,0 +1,53 @@
+@import "./func";
+.Contact{
+grid-area: Contact;
+  //background-color: rgba(0,0,0,0.1);
+  border-radius: 30px;
+
+  @include divsLeft;
+  background-image: url("https://pngimage.net/wp-content/uploads/2018/05/email-logo-png-transparent-background-1.png");
+  //background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .experienceInfo{
+
+  }
+  .infos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    .infoTitle{
+     text-align: left;
+    }
+    .info{
+      text-align: left;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 767px){
+  .Contact{
+
+
+    .infos{
+      display: flex;
+      justify-content: space-around;
+
+      .infoTitle{
+
+      }
+      .info{
+
+      }
+    }
+
+  }
+
+}

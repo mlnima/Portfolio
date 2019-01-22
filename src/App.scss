@@ -1,0 +1,82 @@
+body{
+  background-color: rgba(0,0,0,1);
+}
+.App {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  background-color: rgba(255,255,255,0.0);
+  animation: App 5s forwards;
+  transition:1s;
+}
+*{
+p{
+  max-height: 5px;
+  opacity: 1 !important;
+}
+  progress{
+    opacity: .9!important;
+  }
+
+}
+
+@media only screen and (min-width: 767px){
+
+    .App{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 5px;
+      grid-template-areas:  'Header Header'
+                            ' Contact Experience'
+                            ' Education Education'
+                            ' Skills Languages'
+                            ' Skills Hobbies';
+    }
+
+}
+
+//@media print {
+//  body{
+//
+//    size: A4;
+//    max-width: 21cm;
+//    max-height: 29.7cm;
+//    margin: 30mm 45mm 30mm 45mm;
+//    /* change the margins as you want them to be. */
+//  }
+//}
+
+@mixin divs{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 30px;
+  &::hover{
+    border-radius: 0;
+  }
+}
+
+@keyframes App {
+  0%{
+
+  }
+
+  //25%{
+  //  background-image: url("http://aww-files.s3.amazonaws.com/tips/hello.gif");
+  //  background-size: 300px;
+  //  background-position: top;
+  //  background-repeat: no-repeat;
+  //  background-color: white;
+  //}
+  50%{
+
+  }
+  75%{
+    background-image: url("https://cdn.shopify.com/s/files/1/1195/8136/t/2/assets/welcome-logo.svg?13646174368997846675");
+    background-size: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+  100%{
+
+  }
+}
